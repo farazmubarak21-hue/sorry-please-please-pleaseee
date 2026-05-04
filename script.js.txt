@@ -1,0 +1,12 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contributionForm");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const link = document.getElementById("contributionLink").value;
+    // Redirect to GitHub Issues page with prefilled content
+    const repoURL = "https://github.com/your-username/sorry-please-please-please/issues/new";
+    const issueTitle = encodeURIComponent("New Contribution: Image/Video");
+    const issueBody = encodeURIComponent(`Here is my contribution link:\n\n${link}`);
+    window.open(`${repoURL}?title=${issueTitle}&body=${issueBody}`, "_blank");
+  });
+});

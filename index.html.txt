@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorry Animation Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🙏 Sorry Animation Project 🎬</h1>
+    <p>I was working on an animated video but couldn’t complete it.  
+       This page is open for contributions — feel free to add images or videos!</p>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <h2>📸 Image Gallery</h2>
+      <div class="grid">
+        <img src="images/sample1.jpg" alt="Sample Image 1">
+        <img src="images/sample2.jpg" alt="Sample Image 2">
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>🎥 Video Showcase</h2>
+      <video controls width="600">
+        <source src="videos/sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="contribute">
+      <h2>🤝 Contribute</h2>
+      <p>Want to add your own image or video? Submit a link below — it will open a GitHub Issue where you can share your contribution.</p>
+      <form id="contributionForm">
+        <input type="text" id="contributionLink" placeholder="Paste your image/video link here" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
